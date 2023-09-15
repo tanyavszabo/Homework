@@ -5,7 +5,8 @@ Let PizzaToppings = ["Pepperoni","Cheese","Bacon","Pineapple","Olives"];
 //2. Create a greetCustomer function that prints a message that welcomes a guest, then informs them of the available toppings by looping over pizzaToppings (don't worry about perfect grammar here yet, i.e. "a, b, and c", see Bonus Challenge #9)
 //i.e. "Welcome to Pizza House, our toppings are: a, b, c, ..."
 
-function greetCustomer() {
+function greetCustomer(){
+  let greeting =
   console.log(`Welcome to Pizza House, our toppings are ${PizzaToppings} `);
 //3. Create a getPizzaOrder function that
 //has the parameters size, crust, and an indefinite amount of toppings as inputs
