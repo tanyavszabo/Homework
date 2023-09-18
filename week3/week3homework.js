@@ -1,20 +1,27 @@
 const pizzaToppings = ["pepperoni", "mushrooms", "olives", "bell peppers"];
 
 function greetCustomer() {
-  console.log("Welcome to Pizza House, our toppings are: ");
+  let greeting = "Welcome to Pizza House, our toppings are: ";
   for (let name of pizzaToppings) {
-    console.log(name)
+    greeting += ` ${name},`;
   }
+  console.log(greeting);
 }
 greetCustomer();
 
 function getPizzaOrder(size, crust, ...toppings) {
-  console.log(`One ${size} ${crust} pizza with ${toppings} coming right up!`);
+  let order = `One ${size} ${crust} pizza with` 
+  for(let topping of toppings) {
+    order += ` ${topping}`;
+  }
+ order += " coming right up!";
+//console.log(order);
+
   return [size, crust, toppings];
 }
-getPizzaOrder("large", "thick", pizzaToppings);
+console.log (getPizzaOrder("large", "thick", pizzaToppings));
 
-function preparePizza([size, crust, pizzaToppings]) {
+function preparePizza(size, crust, toppings) {
   console.log("...Cooking pizza...");
   const pizzaType = {
     size: size,
