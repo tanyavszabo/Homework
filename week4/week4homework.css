@@ -2,11 +2,14 @@
 <html>
 <head>
 <style>
+div {
+  border: 1px solidcolor red;
+}
 body {
-background-color: black;
+background-color: :red;
 }
 h1 {
-  color: blue;
+  color: black;
 text-align: center;}
 </style>
 </head>
