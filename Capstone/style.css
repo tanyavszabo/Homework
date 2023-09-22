@@ -1,0 +1,25 @@
+:root {
+    --primary-color:#574486;
+    --secondary-color: #AB82C8
+    --text-primary-color: #FFDAFF;
+    --text-secondary-color: #D3F3EC;
+  }
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #094bf2;
+    display: inline;
+  }
+.li {
+    float: left;
+  }
+  
+  .a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+  
