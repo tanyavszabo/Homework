@@ -36,14 +36,22 @@ let orderType = preparePizza(
   getPizzaOrder("large", "thick", "pepperoni", "mushrooms")
 );
 
-      let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with `;
-      
-      for (let topping of pizza.toppings) {
-      
-        orderReady += `${topping}, `;
-      }
+function servePizza(pizza) {
+
+  let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with `;
+
+  for (let topping of pizza.toppings) {
    
-      console.log(`${orderReady}. Enjoy!`);
-      return pizza;
-    
-    servePizza(cookedPizza);
+    orderReady += `${topping}, `;
+  }
+ 
+  console.log(`${orderReady}. Enjoy!`);
+  return pizza;
+}
+servePizza(cookedPizza);
+
+greetCustomer();
+const myPizza = servePizza(
+preparePizza(getPizzaOrder("small", "thin", "mushrooms", "banana peppers"))
+);
+console.log(myPizza);
