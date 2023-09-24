@@ -25,23 +25,25 @@ console.log(getPizzaOrder("large", "thick", "pepperoni", "mushrooms"));
 
 function preparePizza(size, crust, toppings) {
   console.log("...Cooking pizza...");
-  const pizzaType = {
+  const pizza = {
     size: size,
     crust: crust,
     toppings: toppings
   };
-  return pizzaType;
+  return pizza;
 }
 let orderType = preparePizza(
   getPizzaOrder("large", "thick", "pepperoni", "mushrooms")
 );
 
-function servePizza(pizzaType) {
-  console.log(
-    `Order is Hot and Ready!! Here's your ${pizzaType.size} ${pizzaType.crust} with ${pizzaType.toppings}. Enjoy your Pizza!`
-  );
-
-  return pizzaType;
-}
-servePizza(orderType);
-// output pizza type. toppings into loop exactly like first two functions.
+      let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with `;
+      
+      for (let topping of pizza.toppings) {
+      
+        orderReady += `${topping}, `;
+      }
+   
+      console.log(`${orderReady}. Enjoy!`);
+      return pizza;
+    
+    servePizza(cookedPizza);
