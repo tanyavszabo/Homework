@@ -10,7 +10,7 @@ function greetCustomer() {
 greetCustomer();
 
 function getPizzaOrder(size, crust, ...toppings) {
-  console.log(toppings);
+  //console.log(toppings);
 
   let order = `One ${size} ${crust} pizza with`;
   for (let topping of toppings) {
@@ -23,7 +23,7 @@ function getPizzaOrder(size, crust, ...toppings) {
 }
 console.log(getPizzaOrder("large", "thick", "pepperoni", "mushrooms"));
 
-function preparePizza(size, crust, toppings) {
+function preparePizza([size, crust, toppings]) {
   console.log("...Cooking pizza...");
   const pizza = {
     size: size,
@@ -41,14 +41,14 @@ function servePizza(pizza) {
   let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with `;
 
   for (let topping of pizza.toppings) {
-   
+
     orderReady += `${topping}, `;
   }
- 
+
   console.log(`${orderReady}. Enjoy!`);
   return pizza;
 }
-servePizza(cookedPizza);
+servePizza(orderType);
 
 greetCustomer();
 const myPizza = servePizza(
