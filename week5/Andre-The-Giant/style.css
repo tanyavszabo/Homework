@@ -1,36 +1,56 @@
+@media only screen 
+and (width: 375px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {}
+
+
 html {
-    background-color: antiquewhite;
-  }
+  background-color: rgb(249, 238, 223);
+  margin: 200px;
+  padding: 50px;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;}
+
+h1 {
+  font-size: 60px;
   
-  body {
-    text-align: center;
-    font-size: 18px;
-  }
+}
+
+img {
+  height: 100%;
+}
+
+div {
+  border: 5px solid rgba(168, 100, 12, 0.595);
+  padding: 30px;
+}
+
+#introPic {
+  display: flexbox;
+  height: 300px;
+  width: 300px;
+  border: 10px solid darkred;
+  border-radius: 200px;
+}
+
+#bio {
+  display: flexbox;
+  font-size: 20px;
+}
+#bio > li {
+  padding: 1px;
+  background-color: rgba(244, 188, 84, 0.88);
+  border-radius: 100px;
+  color: black;
+  list-style-type: none;
+}
+
+#pro {
+  width: auto;}
   
-  h1 {
-    font-size: 50px;
-  }
-  
-  img {
-    height: 100%;
-  }
-  
-  div {
-    border: 2px solid burlywood;
-    margin: 10px;
-  }
-  
-  #introPic {
-    float: left;
-  }
-  
-  #bio {
-    float: right;
-  }
-  #bio > li {
-    padding: 2px;
-  }
-  
-  #pro {
-    width: auto;
-  }
+#achievements > li {
+  list-style-type: none;
+}
