@@ -310,7 +310,7 @@ let ToDo = [
 // console.log(userthree);
 
  let userthree = ToDo.filter(task => task.userId ===3);
- console.log(userthree):
+ console.log(userthree);
 
 
 //then find the number of user 3's incomplete tasks
